@@ -1,145 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangiamo Gelato Caffe | Premium Italian Gelato & Catering</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Montserrat', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .hero-gradient { background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; }
-        .gelato-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangiamo Gelato Caffe | Authentic Italian Gelato — A Block From the Huntington Beach Pier</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8D%A6%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Mangiamo Gelato Caffe serves authentic Italian gelato & sorbetto made fresh in-store daily, plus LaVazza coffee, affogato & açaí bowls — on Main Street, one block from the Huntington Beach Pier. Family-owned since 2009.">
+<meta name="keywords" content="gelato Huntington Beach, gelato near pier, Italian gelato Main Street, affogato, sorbetto, gelato catering Orange County">
+<meta property="og:title" content="Mangiamo Gelato Caffe — Authentic Italian Gelato in Huntington Beach">
+<meta property="og:description" content="Made fresh in-store daily, just like in Italy. A block from the Huntington Beach Pier.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;1,500;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"IceCreamShop",
+  "name":"Mangiamo Gelato Caffe",
+  "image":"assets/hero-gelato.jpg",
+  "servesCuisine":["Gelato","Italian","Coffee"],
+  "priceRange":"$$",
+  "telephone":"+1-714-536-5388",
+  "address":{"@type":"PostalAddress","streetAddress":"122 Main St","addressLocality":"Huntington Beach","addressRegion":"CA","postalCode":"92648","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":33.65763,"longitude":-118.00101},
+  "url":"https://www.mangiamo-gelato.com/",
+  "sameAs":["https://instagram.com/mangiamogelato"],
+  "openingHours":"Tu-Su 11:00-21:00",
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.5","reviewCount":"507"}
+}
+</script>
 </head>
-<body class="bg-stone-50 text-stone-800">
+<body>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20 items-center">
-                <div class="text-2xl font-bold tracking-tight text-stone-900">MANGIAMO <span class="text-orange-600 italic">Gelato</span></div>
-                <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
-                    <a href="#menu" class="hover:text-orange-600 transition">Menu</a>
-                    <a href="#catering" class="hover:text-orange-600 transition">Catering</a>
-                    <a href="#about" class="hover:text-orange-600 transition">About</a>
-                    <a href="#contact" class="px-4 py-2 bg-orange-600 text-white rounded-full hover:bg-orange-700 transition">Visit Us</a>
-                </div>
-            </div>
-        </div>
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="brand">MANGIAMO<span class="dot"></span>
+      <small>Gelato Caffe</small></a>
+    <nav class="nav__links">
+      <a href="index.html" class="active">Home</a>
+      <a href="flavors.html">Flavors &amp; Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="catering.html">Catering</a>
+      <a href="faq.html">FAQ</a>
+      <a href="visit.html">Visit</a>
+      <a href="visit.html" class="btn btn--primary nav__cta">Get Directions</a>
     </nav>
+    <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <header class="relative h-screen flex items-center justify-center text-center text-white hero-gradient">
-        <div class="max-w-4xl px-4">
-            <h1 class="text-5xl md:text-7xl mb-6 leading-tight">Artisanal Italian Joy in Every Scoop</h1>
-            <p class="text-xl md:text-2xl mb-10 font-light italic">Handcrafted in small batches using traditional recipes and the finest seasonal ingredients.</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#menu" class="px-8 py-4 bg-white text-stone-900 font-bold rounded-full hover:bg-stone-100 transition uppercase tracking-widest text-sm">View Menu</a>
-                <a href="#catering" class="px-8 py-4 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-700 transition uppercase tracking-widest text-sm">Catering Inquiry</a>
-            </div>
-        </div>
-    </header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero__bg"><img src="assets/hero-gelato.jpg" alt="Artisan Italian gelato cone held up against the Huntington Beach Pier at golden hour"></div>
+  <div class="container">
+    <div class="hero__content">
+      <span class="eyebrow">Authentic Italian Gelato · Made Fresh Daily</span>
+      <h1>A scoop of <em>Italia</em>,<br>a block from the pier.</h1>
+      <p>Real gelato &amp; sorbetto, churned fresh in our shop every single day — the way our family learned it in Northern Italy. No warehouse. No shortcuts. Just <em>mangiamo</em>.</p>
+      <div class="hero__actions">
+        <a href="flavors.html" class="btn btn--primary">See Today's Flavors</a>
+        <a href="visit.html" class="btn btn--light">Find Us by the Pier →</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero__badge"><span>Rated</span><b>4.5★</b><span>500+ reviews</span></div>
+</section>
 
-    <!-- Menu Preview -->
-    <section id="menu" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl mb-4">Our Signature Flavors</h2>
-            <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Sicilian Pistachio</h3>
-                <p class="text-stone-500 italic mb-4">Roasted bronte pistachios with a hint of sea salt.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Dark Chocolate Sea Salt</h3>
-                <p class="text-stone-500 italic mb-4">70% Valrhona chocolate, intense and velvety.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Stracciatella</h3>
-                <p class="text-stone-500 italic mb-4">Sweet cream base with shards of bittersweet chocolate.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Wild Strawberry</h3>
-                <p class="text-stone-500 italic mb-4">Fresh local berries blended into a silky sorbetto.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Madagascar Vanilla</h3>
-                <p class="text-stone-500 italic mb-4">Classic, creamy, and flecked with real vanilla bean.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-            <div class="gelato-card bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
-                <h3 class="text-2xl mb-2">Salted Caramel</h3>
-                <p class="text-stone-500 italic mb-4">House-made caramel with a deep, buttery finish.</p>
-                <span class="text-orange-600 font-bold">$7.50</span>
-            </div>
-        </div>
-    </section>
+<!-- VALUE STRIP -->
+<section class="valuestrip">
+  <div class="container">
+    <div class="vp"><span class="ico">🍦</span><b>Made Fresh Daily</b><span>Small-batch, in-store, every morning</span></div>
+    <div class="vp"><span class="ico">🇮🇹</span><b>Real Italian Recipe</b><span>Learned in Northern Italy</span></div>
+    <div class="vp"><span class="ico">☕</span><b>LaVazza Coffee</b><span>Espresso, lattes &amp; affogato</span></div>
+    <div class="vp"><span class="ico">📍</span><b>By the Pier</b><span>122 Main St — one block away</span></div>
+  </div>
+</section>
 
-    <!-- Catering Section -->
-    <section id="catering" class="py-24 bg-stone-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div>
-                    <h2 class="text-4xl md:text-6xl mb-8">Elevate Your Event</h2>
-                    <p class="text-xl text-stone-400 mb-8 leading-relaxed">From intimate weddings to grand corporate galas, our vintage gelato cart brings a touch of Italian elegance and sweetness to any occasion.</p>
-                    <ul class="space-y-4 text-lg">
-                        <li class="flex items-center"><span class="text-orange-600 mr-3">✓</span> Custom Flavor Selection</li>
-                        <li class="flex items-center"><span class="text-orange-600 mr-3">✓</span> Professional Gelato Servers</li>
-                        <li class="flex items-center"><span class="text-orange-600 mr-3">✓</span> Full Service Setup & Teardown</li>
-                    </ul>
-                </div>
-                <div class="bg-white text-stone-900 p-8 md:p-12 rounded-3xl shadow-2xl">
-                    <h3 class="text-3xl mb-8 text-center">Catering Inquiry</h3>
-                    <form class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-semibold mb-2">Full Name</label>
-                                <input type="text" class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-600 outline-none" placeholder="John Doe">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold mb-2">Email Address</label>
-                                <input type="email" class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-600 outline-none" placeholder="john@example.com">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Event Date</label>
-                            <input type="date" class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-600 outline-none">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Estimated Guest Count</label>
-                            <input type="number" class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-600 outline-none" placeholder="e.g. 100">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold mb-2">Message & Special Requests</label>
-                            <textarea rows="4" class="w-full px-4 py-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-600 outline-none" placeholder="Tell us about your event..."></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-4 bg-stone-900 text-white font-bold rounded-xl hover:bg-stone-800 transition uppercase tracking-widest">Send Request</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- WHY MANGIAMO -->
+<section class="section">
+  <div class="container split">
+    <div class="split__media reveal"><img src="assets/gelato-case.jpg" alt="Colorful display case of freshly made artisan gelato flavors"></div>
+    <div class="reveal">
+      <span class="eyebrow">Why It Tastes Different</span>
+      <h2 class="title">Most "gelato" is shipped frozen.<br>Ours is born here.</h2>
+      <p>Across America, most gelato is made in a warehouse, frozen, and trucked to the store. You can taste the difference. We can't.</p>
+      <p>That's exactly why we opened. Every flavor at Mangiamo is made <strong>fresh, in small batches, right here on Main Street</strong> — denser, smoother, and more intense than ice cream, with real, natural ingredients. Our pistachio is naturally muted green, not neon. Our strawberry sorbetto is dairy-free and bright as a Sicilian afternoon.</p>
+      <p class="signature">"If you're going to do it, do it for something good." — the Mangiamo family</p>
+      <a href="story.html" class="btn btn--ghost">Read Our Family Story</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-12 border-t border-stone-200">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <div class="text-xl font-bold mb-6">MANGIAMO GELATO</div>
-            <p class="text-stone-500 mb-6">123 Italian Way, Suite 100 • Beverly Hills, CA 90210</p>
-            <div class="flex justify-center space-x-6 mb-8 text-stone-400">
-                <a href="#" class="hover:text-orange-600">Instagram</a>
-                <a href="#" class="hover:text-orange-600">Facebook</a>
-                <a href="#" class="hover:text-orange-600">Twitter</a>
-            </div>
-            <p class="text-sm text-stone-400">© 2026 Mangiamo Gelato Caffe. All rights reserved.</p>
+<!-- FLAVORS TEASER -->
+<section class="section bg-cream2">
+  <div class="container center">
+    <span class="eyebrow">30+ Rotating Flavors</span>
+    <h2 class="title">Crowd favorites, made by hand</h2>
+    <p class="lead">A short, seasonal menu — because everything is made fresh and made right. Here's what guests come back for.</p>
+    <div class="grid-cards">
+      <div class="card reveal">
+        <div class="card__body">
+          <span class="pill">Most Loved</span>
+          <h3>Pistachio</h3>
+          <p>Real Sicilian-style pistachios, naturally muted green — never artificially colored. Nutty, rich, unforgettable.</p>
         </div>
-    </footer>
+      </div>
+      <div class="card reveal">
+        <div class="card__body">
+          <span class="pill">Signature</span>
+          <h3>Stracciatella</h3>
+          <p>Silky fior di latte shot through with delicate ribbons of dark chocolate. The classic that never misses.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card__body">
+          <span class="pill">Dairy-Free</span>
+          <h3>Strawberry Sorbetto</h3>
+          <p>So bright and smooth you'd never guess there's no cream. A guest-favorite for a reason.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:36px">
+      <a href="flavors.html" class="btn btn--primary">See the Full Menu</a>
+    </div>
+  </div>
+</section>
 
+<!-- AFFOGATO / COFFEE -->
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">More Than Gelato</span>
+      <h2 class="title">A true Italian caffè by the sea</h2>
+      <p>Start your morning on the boardwalk with a real espresso. Cool off in the afternoon with a scoop. Or have both at once — pour a shot of hot LaVazza espresso over cold fior di latte gelato and meet your new obsession: the <strong>affogato</strong>.</p>
+      <p>Plus fresh-blended smoothies and açaí bowls for the beach crowd. There's a reason to stop in all day long.</p>
+      <a href="flavors.html" class="btn btn--ghost">Explore Coffee &amp; Bowls</a>
+    </div>
+    <div class="split__media reveal"><img src="assets/affogato.jpg" alt="Affogato — espresso poured over gelato in a glass"></div>
+  </div>
+</section>
+
+<!-- STORY BAND -->
+<section class="section band">
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold)">Mangiamo means "Let's eat"</span>
+    <p class="quote">It's what an Italian family says <span>around the table</span> — and it's the heart of everything we make.</p>
+    <cite>— Family-owned in Huntington Beach since 2009</cite>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section bg-cream2">
+  <div class="container center">
+    <span class="eyebrow">Loved by Locals &amp; Travelers</span>
+    <h2 class="title">"As good as any we had in Italy."</h2>
+    <div class="reviews">
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Just spent 5 weeks in Italy and tried gelato everywhere. Finally tried our local Mangiamo — it is as good as any we had in Italy. The real deal. Grazie Nick!"</p>
+        <b>— Mr. B, Google</b>
+      </div>
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>"This place is a hidden gem. Real, natural ingredients — the pistachio had a subtle natural color, not the usual artificial look. Authentic, European quality."</p>
+        <b>— Niklas P, Google</b>
+      </div>
+      <div class="review reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Nick catered my friend's baby shower and wow — light, fresh, top-tier ingredients. The raspberry champagne sorbet? Chef's kiss."</p>
+        <b>— Cat M, Google</b>
+      </div>
+    </div>
+    <div class="rating-summary">
+      <div><b>4.5★</b><span>Google · 500+ reviews</span></div>
+      <div><b>4.4★</b><span>Yelp · 365 reviews</span></div>
+      <div><b>4.6★</b><span>TripAdvisor</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING CTA -->
+<section class="section cta-banner">
+  <div class="cta-banner__bg"><img src="assets/catering.jpg" alt="Italian gelato catering spread at a celebration"></div>
+  <div class="container">
+    <span class="eyebrow" style="color:var(--gold)">Catering Across Orange County</span>
+    <h2>Make your event unforgettable</h2>
+    <p>Weddings, baby showers, birthdays, corporate events — bring authentic, fresh-made gelato to your celebration. Nick handles every order personally.</p>
+    <div class="hero__actions">
+      <a href="catering.html" class="btn btn--gold">Plan Your Event</a>
+      <a href="tel:+17145365388" class="btn btn--light">Call Nick: (714) 536-5388</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a href="index.html" class="brand">MANGIAMO<span class="dot"></span><small>Gelato Caffe</small></a>
+      <p>Authentic Italian gelato made fresh daily, a block from the Huntington Beach Pier. <em>Mangiamo</em> — let's eat.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="flavors.html">Flavors &amp; Menu</a>
+      <a href="story.html">Our Story</a>
+      <a href="catering.html">Catering</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <a href="https://maps.google.com/?q=Mangiamo+Gelato+Caffe+122+Main+St+Huntington+Beach">122 Main St, Ste 101<br>Huntington Beach, CA 92648</a>
+      <a href="tel:+17145365388">(714) 536-5388</a>
+      <a href="visit.html">Hours &amp; Directions</a>
+    </div>
+    <div>
+      <h4>Order &amp; Follow</h4>
+      <a href="https://www.doordash.com/store/mangiamo-gelato-caffe-huntington-beach-37883809/" target="_blank" rel="noopener">Order on DoorDash</a>
+      <a href="https://www.ubereats.com/" target="_blank" rel="noopener">Order on Uber Eats</a>
+      <a href="https://instagram.com/mangiamogelato" target="_blank" rel="noopener">@mangiamogelato</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Mangiamo Gelato Caffe · Family-owned since 2009</span>
+    <span>Open Tue–Sun, 11 AM – 9 PM · Closed Mondays</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
